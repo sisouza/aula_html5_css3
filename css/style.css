@@ -1,29 +1,97 @@
 
 body {
-    background: #E8C5C5;
+    /*background-image: url(../img/site.jpg);  #c6c6d0; */
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
     margin-left: 100px;
     margin-right: 200px;
+    background-color: #CBCBCD;
 }
 
 header {
     margin-top: 70px;
+    text-align: center;
 }
 
 h1 {
-    color: red;
+    color: #152248;
     font-family: fantasy;
 }
 
-h2 {
+h2,h3 {
+    color: #152248;
     font-family: fantasy;
 }
 
 p {
     font-size: 18px;
+    color: #1f1f1f;
 }
 
-footer {
-    margin-bottom: 30px;
+
+nav{
+    background-color: #152248;
+    color: #c6c6d0;
+    padding: 2px;
+    text-align: right;
+}
+
+ ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 7px;
+}
+
+ul li a{
+    color:#9195a1;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+a {
+ text-decoration: none;
+     color: #c6c6d0;
+}
+
+/*editar o width qnd responsivar*/
+.rodape{
+    background-color: #152248; 
+    margin-top: 100px;
+    width: 100%;
+}
+
+.rodape p{
+    text-align: center;
+    color: #c6c6d0;
+   
+}
+
+.colunas_footer{
+    display: flex;
+    color: #c6c6d0;
+    flex-wrap: wrap;
+
+}
+
+.col{
+    margin-left: 90px;
+
+
+}
+.col p{
+      color: #c6c6d0;
+}
+
+.secoes_oqfazemos{
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+
 }
 
 .img_padrao {
@@ -32,5 +100,25 @@ footer {
 }
 
 .logo {
-    width: 30px;
+    width: 20px;
+}
+
+
+.inicio{   
+    margin: 250px auto;
+    text-align: center;
+}
+
+.btn{
+    border-radius: 30px;
+    padding: 4px;
+    opacity: 0.6;
+}
+
+/*queries*/
+@media (max-width: 518px){
+    .secoes_oqfazemos {
+        flex-wrap: wrap;
+
+    }
 }
